@@ -1,0 +1,11 @@
+application: himmpython
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /pics
+  static_dir: pics
+
+- url: /.*
+  script: my-pic.py
